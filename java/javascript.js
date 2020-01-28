@@ -1,3 +1,13 @@
+var ohBrother = document.getElementById("soundOhBrother");
+
+function playOhBrother() {
+    ohBrother.play();
+} function pauseOhBrother() {
+    ohBrother.pause();
+}
+
+
+
 var Q = [
     "What does the fox say? Nobody Nose",
     "Worst dissappointment - hoveboards or apple watch?",
@@ -7,7 +17,6 @@ var Q = [
     "What's that song that goes dunDunDUnDun daDunDUnDUnDDUnDUNDunDUND MEROW duNDUnDUNDuNDuNDUN nuNunuNuNAtcha?",
     "(Finish this) Walk into the store like - Whaddup I got a big (🐓) - Thrift Store",
     "What famous 🍑 is this? (Harley Quinn/Margot Robbie) Jennifer Anison, Kim K, etc",
-    "Name a better Duo- (pic of zach and cody(left) Raven/Girl - Drake and Josh - Zanessa (Zac Efron and Vanessa Hudgens), Phineas & Ferb",
     "What's 9+10? (21)",
     "What is this (club penguin pet)?",
     "Who is this? (Slenderman, <i>The</i> Slenderman, Skinny White Guy, Mouthface.",
@@ -17,22 +26,13 @@ var Q = [
 ]
 
 var A = [
-    //checkDataAttr
-]
-var userA = [
-
+    //checkDataAttr in array and if none matches (-) score;
 ]
 
-var ohBrother = document.getElementById("soundOhBrother");
-
-function playOhBrother() {
-    ohBrother.play();
-} function pauseOhBrother() {
-    ohBrother.pause();
-}
 
 $("a").click(function() {
-    alert( "Handler for .click() called." );
+    var userA = $(this).data("id") // will return the data-id string
+    console.log(userA);
 });
 
 
@@ -52,4 +52,6 @@ $("a").click(function() {
 function startgame() {
     $("#start").hide();
     $("#stages").show();
+    $("#stage").hide();
+    $("#set1").show();
 }
