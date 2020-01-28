@@ -26,13 +26,19 @@ var Q = [
 ]
 
 var A = [
-    //checkDataAttr in array and if none matches (-) score;
+    "104", // e. None of the above
 ]
 
 
 $("a").click(function() {
     var userA = $(this).data("id") // will return the data-id string
     console.log(userA);
+
+    var thisStage = $(this).closest('.stage'); console.log(thisStage);
+    var nextStage = $(thisStage).next('.stage'); console.log(nextStage);
+
+    thisStage.hide();
+    nextStage.show();
 });
 
 
@@ -52,6 +58,6 @@ $("a").click(function() {
 function startgame() {
     $("#start").hide();
     $("#stages").show();
-    $("#stage").hide();
+    $(".stage").hide();
     $("#set1").show();
 }
