@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="css/media/00s.png">
+    <title>Totally Real Flash Game</title>
+    <link href="css/flex.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script src="java/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <!--
+        ❤ 
+
+        _.---,._,'
+       /' _.--.<
+         /'     `'
+       /' _.---._____
+       \.'   ___, .-'`
+           /'    \\             .
+         /'       `-.          -|-
+        |                       |
+        |                   .-'~~~`-.
+        |                 .'         `.
+        |                 |  R  I  P  |
+  jgs   |                 |           |
+        |                 |   FLASH   |
+         \              \\|    2020   |//
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    -->
+</head>
+<body>
+    <div id="game">
+        <div id="start">
+            <audio id="soundOhBrother">
+                <source src="css/media/audio/ohBrother.mp3" type="audio/mpeg">
+            </audio>
+            <img src="css/media/start.png" alt="please click this button that isn't a button at all"
+                onmouseover="playOhBrother()" 
+                onmouseout="pauseOhBrother()"
+                onclick="startgame()"
+            >
+        </div>
+        <div id="stages">
+            <div class="row t7" id="topbar">
+                <div class="do3"><span>Score: <span id="scoreNum">0</span>/41</div>
+                <div class="do3"><span></span></div>
+                <div class="do3 txt-right"><span>Question #<span id="questionNum">1</span></div>
+            </div>
+            <div class="stage" id="set1"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="java/javascript.js"></script>
+</body>
+</html>
