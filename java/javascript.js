@@ -13,7 +13,6 @@ var Q = [
     "Worst dissappointment - hoveboards or apple watch?",
     "Who is this? Obama.",
     "What song video is this shot from? - Cups, Anna Kendrick.",
-    "What's that song that goes dunDunDUnDun daDunDUnDUnDDUnDUNDunDUND MEROW duNDUnDUNDuNDuNDUN nuNunuNuNAtcha?",
     "What famous 🍑 is this? (Harley Quinn/Margot Robbie) Jennifer Anison, Kim K, etc",
     "What is this (club penguin pet)?",
     "Who is this? (Slenderman, <i>The</i> Slenderman, Skinny White Guy, Mouthface.",
@@ -53,4 +52,5 @@ function startgame() {
     $("#stages").show();
     $(".stage").hide();
     $("#set1").show();
+    //$("#set6").show();
 }
