@@ -9,7 +9,6 @@ function playOhBrother() {
 
 
 var Q = [
-    "What does the fox say? Nobody Nose",
     "Worst dissappointment - hoveboards or apple watch?",
     "What song video is this shot from? - Cups, Anna Kendrick.",
     "What famous 🍑 is this? (Harley Quinn/Margot Robbie) Jennifer Anison, Kim K, etc",
@@ -39,15 +38,15 @@ function startgame() {
     $("#stages").show();
     $(".stage").hide();
     $("#set1").show();
-    //$("#set9").show();
+    //$("#set10").show();
 }
 
 $("a").click(function() {
     var userA = $(this).data("id") // will return the data-id string
     console.log(userA);
 
-    var thisStage = $(this).closest('.stage'); console.log(thisStage);
-    var nextStage = $(thisStage).next('.stage'); console.log(nextStage);
+    var thisStage = $(this).closest('.stage');
+    var nextStage = $(thisStage).next('.stage');
 
     thisStage.hide();
     nextStage.show();
@@ -56,6 +55,9 @@ $("a").click(function() {
 });
 
 
+var questionNum = $("#questionNum").text;
+
 function updateGame() {
-    console.log("Update.");
+    questionNum+1;
+    console.log(questionNum);
 }
