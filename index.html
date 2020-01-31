@@ -30,16 +30,27 @@
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     -->
     <!--
-        data-id=""
+        <a data-id=""></a>
         Lauren Von Der Pool
     -->
 </head>
 <body>
     <div id="game">
         <div id="start">
-            <audio id="soundOhBrother">
-                <source src="css/media/audio/ohBrother.mp3" type="audio/mpeg">
-            </audio>
+            <div class="audios">
+                <audio id="soundOhBrother">
+                    <source src="css/media/audio/ohBrother.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="correctSound">
+                    <source src="css/media/audio/correct.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="inCorrectSound">
+                    <source src="css/media/audio/inCorrect.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="theme" loop>
+                    <source src="css/media/audio/wiiSports.mp3" type="audio/mpeg">
+                </audio>
+            </div>
             <img src="css/media/start.png" alt="please click this button that isn't a button at all"
                 onmouseover="playOhBrother()" 
                 onmouseout="pauseOhBrother()"
@@ -219,7 +230,102 @@
                 </div>
             </div>
             <div class="stage" id="set11">
-    
+                <div class="column">
+                    <h3>Which image pops in <i>Scary Maze Game</i>?</h3><br>
+                    <div class="row">
+                        <div class="db5">
+                            <a data-id="1100"><img src="css/media/mazeghost.jpg" width="305px" height="228px"></a><br>
+                            <a data-id="1101"><img src="css/media/mazechrissy.jpg" width="305px" height="228px"></a>
+                        </div>
+                        <div class="db5">
+                            <a data-id="1102"><img src="css/media/mazeflex.jpg" width="305px" height="228px"></a><br>
+                            <a data-id="1103" class="t15"><br>Trick question.<br>No image pops up.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage" id="set12">
+                <div class="column">
+                    <h3>Which site would this avatar come from?</h3>
+                    <img src="css/media/avi.jpg"><br>
+                    <div class="row t7">
+                        <div class="db5">
+                            <a data-id="1200">○ Virtual Highway</a>
+                            <a data-id="1201">○ IMVU</a>
+                            <a data-id="1202">○ WeeWorld</a>
+                            <a data-id="1203">○ Zwinky</a>
+                            <a data-id="1204">○ Habbo Hotel</a>
+                            <a data-id="1205">○ Fantage</a>
+                            <a data-id="1206">○ Neopets</a>
+                            <a data-id="1207">○ SecondLife</a>
+                        </div>
+                        <div class="db5">
+                            <a data-id="1208">○ WoozWorld</a>
+                            <a data-id="1209">○ Meez</a>
+                            <a data-id="1210">○ Zabbo</a>
+                            <a data-id="1211">○ Stardoll</a>
+                            <a data-id="1212">○ YoWorld</a>
+                            <a data-id="1213">○ ChoBots</a>
+                            <a data-id="1214">○ SuperSecret</a>
+                            <a data-id="1215">○ Planet Cazmo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage" id="set13">
+                <div class="db3">
+                    <br><br><img src="css/media/phone.png">
+                </div>
+                <div class="db7">
+                    <h2>What kind of phone is this?</h2><br>
+                    <div class="t15">
+                        <a data-id="1300">a. GrassHopper</a>
+                        <a data-id="1301">b. FireFly</a>
+                        <a data-id="1302">c. JitterBug</a>
+                        <a data-id="1303">d. GloPhone</a>
+                    </div>
+                </div>
+            </div>
+            <div class="stage" id="set14">
+                <div class="db7">
+                    <h3>Who does this famous 🍑 belong to?</h3><br>
+                    <div class="t16">
+                        <a data-id="1400">⤳ Lindsay Lohan</a>
+                        <a data-id="1401">⤳ Hillary Duff</a>
+                        <a data-id="1402">⤳ Cameron Diaz</a>
+                        <a data-id="1403">⤳ Jennifer Aniston</a>   
+                        <a data-id="1404">⤳ Drew Barrymore</a>
+                        <a data-id="1405">⤳ Megan Fox</a>
+                        <a data-id="1406">⤳ Avril Lavigne</a>
+                        <a data-id="1407">⤳ Tara Reid</a>
+                        <a data-id="1408">⤳ Paris Hilton</a>
+                    </div>
+                </div>
+                <div class="db3">
+                    <br><br><br><img src="css/media/butt.jpg" width="90%">
+                </div>
+            </div>
+            <div class="stage" id="set15">
+                <div class="column">
+                    <h1>What song is playing right now?</h1>
+                    <div class="t9">
+                        <a data-id="1500">Mii Channel Theme</a>
+                        <a data-id="1501">Wii Sports Theme</a>
+                        <a data-id="1502">Wii Sports Resort Theme</a>
+                        <a data-id="1503">Wii Music Theme</a>
+                        <a data-id="1504">Wii Fit Theme</a>
+                        <a data-id="1505">Wii Play Theme</a>
+                        <a data-id="1506">Wii Party Theme</a>
+                        <a data-id="1507">Wii Shop Channel Theme</a>
+                        <a data-id="1508">Wii Chess Theme</a>
+                    </div>
+                </div>
+            </div>
+            <div class="stage" id="set">
+
+            </div>
+            <div class="stage" id="set">
+
             </div>
             <div class="stage" id="set">
 

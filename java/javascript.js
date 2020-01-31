@@ -1,4 +1,7 @@
 var ohBrother = document.getElementById("soundOhBrother");
+var correctSound = document.getElementById("correctSound");
+var inCorrectSound = document.getElementById("inCorrectSound");
+var theme = document.getElementById("theme");
 
 function playOhBrother() {
     ohBrother.play();
@@ -11,7 +14,6 @@ function playOhBrother() {
 var Q = [
     "Worst dissappointment - hoveboards or apple watch?",
     "What song video is this shot from? - Cups, Anna Kendrick.",
-    "What famous 🍑 is this? (Harley Quinn/Margot Robbie) Jennifer Anison, Kim K, etc",
     "Ani-bandz",
     "Purple Palace/Putt Putt",
     "What is this called? Meme rage face?"
@@ -28,16 +30,28 @@ var A = [
     802, // Barack Obama
     900, // Slenderman
     1010, // Will always be a mystery
-    "", // 
-    "" // 
+    1101, // 
+    1202, // WeeWorld
+    1301, // FireFly
+    1408, // Paris Hilton
+    , // 
+    , // 
+    , // 
+    , // 
+    , // 
+    , // 
+    , // 
+    , // 
+    , // 
+    , // 
 ]
 
 
 
 function startgame() {
     $("#start").hide(); $("#stages").show();
-    $(".stage").hide(); $("#set1").show();
-    //$("#set10").show();
+    $(".stage").hide(); //$("#set1").show(); theme.play();
+    $("#set15").show();
 }
 
 $("a").click(function() {
@@ -49,8 +63,10 @@ $("a").click(function() {
         var nextScoreNum = "";
             if ($.inArray(userA, A) !=-1) {
                 nextScoreNum = parseInt(scoreNum) + 1;
+                correctSound.play();
             } else {
                 nextScoreNum = parseInt(scoreNum) + 0;
+                inCorrectSound.play();
             }
         $("#scoreNum").text(nextScoreNum);
 
