@@ -34,7 +34,7 @@ var A = [
     1202, // WeeWorld
     1301, // FireFly
     1408, // Paris Hilton
-    , // 
+    1501, // Wii Sports Theme 
     , // 
     , // 
     , // 
@@ -50,8 +50,8 @@ var A = [
 
 function startgame() {
     $("#start").hide(); $("#stages").show();
-    $(".stage").hide(); $("#set1").show(); theme.play();
-    //$("#set15").show();
+    $(".stage").hide(); //$("#set1").show(); theme.play();
+    $("#set15").show();
 }
 
 $("a").click(function() {

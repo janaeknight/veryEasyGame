@@ -1,8 +1,8 @@
 body {
     background-color: snow;
     background-image: url("../css/media/bg.png");
-    background-size: cover;
-    background-position: center;
+    background-size: cover; background-position: center;
+    overflow: hidden;
 }
 
 #game {
@@ -11,17 +11,6 @@ body {
     margin: 0; position: absolute;
     top: 50%; left: 50%;
     -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
-    /*
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    -webkit-box-shadow: 10px 10px -1px -1px rgba(121,158,230,1);
-    -moz-box-shadow: 10px 10px -1px -1px rgba(121,158,230,1);
-    box-shadow: 10px 10px 1px -1px rgba(121,158,230,1);
-    border-left: 8px solid #e6799e;
-    border-top: 8px solid #e6799e;
-    */
-    border-style: double;
     border: 5px double lightslategray;
 }
 
