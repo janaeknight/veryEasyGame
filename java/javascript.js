@@ -15,8 +15,7 @@ var Q = [
     "Worst dissappointment - hoveboards or apple watch?",
     "What song video is this shot from? - Cups, Anna Kendrick.",
     "Ani-bandz",
-    "Purple Palace/Putt Putt",
-    "What is this called? Meme rage face?"
+    "Purple Palace/Putt Putt"
 ]
 
 var A = [
@@ -35,7 +34,7 @@ var A = [
     1301, // FireFly
     1408, // Paris Hilton
     1501, // Wii Sports Theme 
-    , // 
+    1602, // Fancy Pants 
     , // 
     , // 
     , // 
@@ -50,8 +49,8 @@ var A = [
 
 function startgame() {
     $("#start").hide(); $("#stages").show();
-    $(".stage").hide(); //$("#set1").show(); theme.play();
-    $("#set15").show();
+    $(".stage").hide(); $("#set1").show(); theme.play();
+    //$("#set18").show();
 }
 
 $("a").click(function() {
