@@ -38,19 +38,16 @@ var A = [
     1702, 1705, // rage comics ,i don't know but i used them
     1802, // Only for teachers
     1904, // Lemonade Mouth
-    , // 
-    , // 
-    , // 
-    , // 
-    , // 
+    2001, // khakis
+    2104, // Obama
 ]
 
 
 
 function startgame() {
     $("#start").hide(); $("#stages").show();
-    $(".stage").hide(); //$("#set1").show(); theme.play();
-    $("#set19").show();
+    $(".stage").hide(); $("#set1").show(); theme.play();
+    //$("#set21").show();
 }
 
 $("a").click(function() {
