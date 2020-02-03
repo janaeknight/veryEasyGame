@@ -49,8 +49,8 @@ var A = [
 
 function startgame() {
     $("#start").hide(); $("#stages").show();
-    $(".stage").hide(); $("#set1").show(); theme.play();
-    //$("#set18").show();
+    $(".stage").hide(); //$("#set1").show(); theme.play();
+    $("#set19").show();
 }
 
 $("a").click(function() {
