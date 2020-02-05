@@ -9,15 +9,6 @@ function playOhBrother() {
     ohBrother.pause();
 }
 
-
-
-var Q = [
-    "Worst dissappointment - hoveboards or apple watch?",
-    "What song video is this shot from? - Cups, Anna Kendrick.",
-    "Ani-bandz",
-    "Purple Palace/Putt Putt"
-]
-
 var A = [
     104, // None of the above
     202, // 21,
